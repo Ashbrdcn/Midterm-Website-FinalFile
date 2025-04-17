@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ash Bradecina | Full Stack Developer</title>
+  <meta name="description" content="Professional portfolio showcasing full stack development expertise with a futuristic aesthetic">
+  <link rel="stylesheet" href="/aliparo/aliparo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <main class="main">
+    <!-- Particle Background -->
+    <canvas id="particle-canvas" class="particle-background"></canvas>
+
+    <!-- Navigation -->
+    <nav id="main-nav" class="nav">
+      <div class="container">
+        <a href="/" class="nav-logo">
+          <i data-lucide="gamepad" class="nav-logo-icon"></i>
+          <span class="nav-logo-text">ASH.DEV</span>
+        </a>
+        <div class="nav-links">
+          <a href="#projects" class="nav-link">PROJECTS</a>
+          <a href="#skills" class="nav-link">SKILLS</a>
+          <a href="#experience" class="nav-link">EXPERIENCE</a>
+          <a href="#contact" class="nav-link">CONTACT</a>
+        </div>
+        <button class="btn btn-outline">
+          <span class="btn-text">RESUME.EXE</span>
+          <span class="btn-bg"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg"></div>
+      <div class="hero-gradient"></div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <span class="badge">Full Stack Developer</span>
+          <h1 class="hero-title">
+            <span class="glitch-text" data-text="ASH BRADECINA">ASH BRADECINA</span>
+          </h1>
+          <h2 class="hero-subtitle">BUILDING DIGITAL SOLUTIONS</h2>
+          <p class="hero-description">
+            Full Stack developer specializing in creating immersive web applications with cutting-edge technologies.
+            Expert in e-commerce platforms, fitness applications, and educational portals.
+          </p>
+          <div class="hero-buttons">
+            <button class="btn btn-primary">
+              <span class="btn-text">EXPLORE PROJECTS</span>
+              <i data-lucide="chevron-right" class="btn-icon"></i>
+              <span class="btn-bg"></span>
+            </button>
+            <button class="btn btn-outline">
+              <span class="btn-text">INITIALIZE CONTACT</span>
+              <i data-lucide="terminal" class="btn-icon"></i>
+              <span class="btn-bg"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Animated scroll indicator -->
+      <div class="scroll-indicator">
+        <span class="scroll-text">Scroll</span>
+        <div class="scroll-icon">
+          <div class="scroll-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+      <div class="section-bg"></div>
+      <div class="section-gradient"></div>
+
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-card-gradient"></div>
+            <div class="stat-card-accent"></div>
+            <div class="stat-icon-container">
+              <i data-lucide="terminal" class="stat-icon"></i>
+              <div class="stat-icon-ping"></div>
+            </div>
+            <div class="stat-content">
+              <p class="stat-label">PROJECTS DEPLOYED</p>
+              <h3 class="stat-value">2</h3>
+            </div>
+            <div class="card-corner"></div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-card-gradient"></div>
+            <div class="stat-card-accent"></div>
+            <div class="stat-icon-container">
+              <i data-lucide="code" class="stat-icon"></i>
+              <div class="stat-icon-ping"></div>
+            </div>
+            <div class="stat-content">
+              <p class="stat-label">TECH STACK MASTERY</p>
+              <h3 class="stat-value">5</h3>
+            </div>
+            <div class="card-corner"></div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-card-gradient"></div>
+            <div class="stat-card-accent"></div>
+            <div class="stat-icon-container">
+              <i data-lucide="cpu" class="stat-icon"></i>
+              <div class="stat-icon-ping"></div>
+            </div>
+            <div class="stat-content">
+              <p class="stat-label">YEARS EXPERIENCE</p>
+              <h3 class="stat-value">2</h3>
+            </div>
+            <div class="card-corner"></div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-card-gradient"></div>
+            <div class="stat-card-accent"></div>
+            <div class="stat-icon-container">
+              <i data-lucide="globe" class="stat-icon"></i>
+              <div class="stat-icon-ping"></div>
+            </div>
+            <div class="stat-content">
+              <p class="stat-label">GLOBAL CLIENTS</p>
+              <h3 class="stat-value">5</h3>
+            </div>
+            <div class="card-corner"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="section-bg"></div>
+      <div class="section-gradient"></div>
+
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-container">
+            <i data-lucide="layers" class="section-icon"></i>
+            <h2 class="section-title">Featured Projects</h2>
+          </div>
+          <div class="section-divider"></div>
+          <p class="section-description">
+            A selection of my recent work, showcasing my expertise in Full Stack development for e-commerce, fitness,
+            and educational platforms.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- E-commerce Project -->
+          <div class="project-card">
+            <div class="project-card-gradient"></div>
+            <div class="project-card-accent"></div>
+            <div class="project-image-container">
+              <img src="/aliparo/e-com.png" alt="E-commerce Website" class="project-image">
+              <div class="project-image-overlay"></div>
+              <div class="project-image-glow"></div>
+              <span class="project-badge">Full Stack</span>
+              <div class="project-icon-container">
+                <i data-lucide="shopping-cart" class="project-icon"></i>
+              </div>
+              <div class="project-progress-bar"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">Fashion E-commerce</h3>
+                <div class="project-links">
+                  <i data-lucide="external-link" class="project-link-icon"></i>
+                  <i data-lucide="github" class="project-link-icon"></i>
+                </div>
+              </div>
+              <p class="project-description">
+                A modern e-commerce platform for clothing with advanced filtering, real-time inventory, and secure
+                payment processing.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Next.js</span>
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">MongoDB</span>
+                <span class="project-tag">Stripe</span>
+              </div>
+              <div class="card-corner"></div>
+            </div>
+          </div>
+
+          <!-- Fitness Website -->
+          <div class="project-card">
+            <div class="project-card-gradient"></div>
+            <div class="project-card-accent"></div>
+            <div class="project-image-container">
+              <img src="/aliparo/fitness.png" alt="Fitness Website" class="project-image">
+              <div class="project-image-overlay"></div>
+              <div class="project-image-glow"></div>
+              <span class="project-badge">Full Stack</span>
+              <div class="project-icon-container">
+                <i data-lucide="dumbbell" class="project-icon"></i>
+              </div>
+              <div class="project-progress-bar"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">FitTech Platform</h3>
+                <div class="project-links">
+                  <i data-lucide="external-link" class="project-link-icon"></i>
+                  <i data-lucide="github" class="project-link-icon"></i>
+                </div>
+              </div>
+              <p class="project-description">
+                Comprehensive fitness platform with workout tracking, nutrition planning, and progress visualization
+                using interactive charts.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">React</span>
+                <span class="project-tag">Express</span>
+                <span class="project-tag">PostgreSQL</span>
+                <span class="project-tag">D3.js</span>
+              </div>
+              <div class="card-corner"></div>
+            </div>
+          </div>
+
+          <!-- Scholarship Registration -->
+          <div class="project-card">
+            <div class="project-card-gradient"></div>
+            <div class="project-card-accent"></div>
+            <div class="project-image-container">
+              <img src="/aliparo/scholar.png" alt="Scholarship Portal" class="project-image">
+              <div class="project-image-overlay"></div>
+              <div class="project-image-glow"></div>
+              <span class="project-badge">Full Stack</span>
+              <div class="project-icon-container">
+                <i data-lucide="graduation-cap" class="project-icon"></i>
+              </div>
+              <div class="project-progress-bar"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">Scholarship Portal</h3>
+                <div class="project-links">
+                  <i data-lucide="external-link" class="project-link-icon"></i>
+                  <i data-lucide="github" class="project-link-icon"></i>
+                </div>
+              </div>
+              <p class="project-description">
+                Secure scholarship application system with document uploads, application tracking, and administrative
+                review workflows.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Vue.js</span>
+                <span class="project-tag">Firebase</span>
+                <span class="project-tag">Cloud Functions</span>
+                <span class="project-tag">PDF Generation</span>
+              </div>
+              <div class="card-corner"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="section-bg"></div>
+      <div class="section-gradient"></div>
+
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-container">
+            <i data-lucide="code" class="section-icon"></i>
+            <h2 class="section-title">Tech Tree</h2>
+          </div>
+          <div class="section-divider"></div>
+          <p class="section-description">
+            My expertise spans the entire development stack, constantly evolving and expanding with new technologies.
+          </p>
+        </div>
+
+        <div class="tech-tree">
+          <div class="tech-categories">
+            <div class="tech-category active" data-category="frontend">
+              <div class="tech-category-icon-container">
+                <i data-lucide="globe" class="tech-category-icon"></i>
+              </div>
+              <div class="tech-category-content">
+                <h3 class="tech-category-title">Frontend</h3>
+                <p class="tech-category-count">5 technologies</p>
+              </div>
+              <div class="tech-category-indicator"></div>
+            </div>
+
+            <div class="tech-category" data-category="backend">
+              <div class="tech-category-icon-container">
+                <i data-lucide="server" class="tech-category-icon"></i>
+              </div>
+              <div class="tech-category-content">
+                <h3 class="tech-category-title">Backend</h3>
+                <p class="tech-category-count">5 technologies</p>
+              </div>
+              <div class="tech-category-indicator"></div>
+            </div>
+
+            <div class="tech-category" data-category="database">
+              <div class="tech-category-icon-container">
+                <i data-lucide="database" class="tech-category-icon"></i>
+              </div>
+              <div class="tech-category-content">
+                <h3 class="tech-category-title">Database & DevOps</h3>
+                <p class="tech-category-count">5 technologies</p>
+              </div>
+              <div class="tech-category-indicator"></div>
+            </div>
+          </div>
+
+          <div class="tech-details" id="tech-details">
+            <!-- Frontend Technologies (default visible) -->
+            <div class="tech-group active" data-group="frontend">
+              <!-- Tech 1 -->
+              <div class="tech-card">
+                <div class="tech-card-gradient"></div>
+                <div class="tech-card-accent"></div>
+                <div class="tech-header">
+                  <h4 class="tech-title">HTML / CSS / JS</h4>
+                  <div class="tech-level">
+                    <i data-lucide="zap" class="tech-level-icon"></i>
+                    <span class="tech-level-value">95%</span>
+                  </div>
+                </div>
+                <div class="tech-progress">
+                  <div class="tech-progress-bar" style="width: 95%"></div>
+                </div>
+                <p class="tech-description">Core web technologies and responsive design</p>
+                <div class="card-corner"></div>
+              </div>
+
+              <div class="tech-card">
+                <div class="tech-card-gradient"></div>
+                <div class="tech-card-accent"></div>
+                <div class="tech-header">
+                  <h4 class="tech-title">React / Next.js</h4>
+                  <div class="tech-level">
+                    <i data-lucide="zap" class="tech-level-icon"></i>
+                    <span class="tech-level-value">90%</span>
+                  </div>
+                </div>
+                <div class="tech-progress">
+                  <div class="tech-progress-bar" style="width: 90%"></div>
+                </div>
+                <p class="tech-description">Component-based UI development with server-side rendering</p>
+                <div class="card-corner"></div>
+              </div>
+
+              <div class="tech-card">
+                <div class="tech-card-gradient"></div>
+                <div class="tech-card-accent"></div>
+                <div class="tech-header">
+                  <h4 class="tech-title">Bootstrap</h4>
+                  <div class="tech-level">
+                    <i data-lucide="zap" class="tech-level-icon"></i>
+                    <span class="tech-level-value">85%</span>
+                  </div>
+                </div>
+                <div class="tech-progress">
+                  <div class="tech-progress-bar" style="width: 85%"></div>
+                </div>
+                <p class="tech-description">Responsive UI framework for rapid development</p>
+                <div class="card-corner"></div>
+              </div>
+            </div>
+
+            <!-- Backend Technologies (initially hidden) -->
+            <div class="tech-group" data-group="backend">
+              <!-- Tech 1 -->
+              <div class="tech-card">
+                <div class="tech-card-gradient"></div>
+                <div class="tech-card-accent"></div>
+                <div class="tech-header">
+                  <h4 class="tech-title">Python</h4>
+                  <div class="tech-level">
+                    <i data-lucide="zap" class="tech-level-icon"></i>
+                    <span class="tech-level-value">90%</span>
+                  </div>
+                </div>
+                <div class="tech-progress">
+                  <div class="tech-progress-bar" style="width: 90%"></div>
+                </div>
+                <p class="tech-description">Backend development and data processing</p>
+                <div class="card-corner"></div>
+              </div>
+
+              <div class="tech-card">
+                <div class="tech-card-gradient"></div>
+                <div class="tech-card-accent"></div>
+                <div class="tech-header">
+                  <h4 class="tech-title">Flask</h4>
+                  <div class="tech-level">
+                    <i data-lucide="zap" class="tech-level-icon"></i>
+                    <span class="tech-level-value">85%</span>
+                  </div>
+                </div>
+                <div class="tech-progress">
+                  <div class="tech-progress-bar" style="width: 85%"></div>
+                </div>
+                <p class="tech-description">Lightweight web framework for Python</p>
+                <div class="card-corner"></div>
+              </div>
+
+              <div class="tech-card">
+                <div class="tech-card-gradient"></div>
+                <div class="tech-card-accent"></div>
+                <div class="tech-header">
+                  <h4 class="tech-title">RESTful APIs</h4>
+                  <div class="tech-level">
+                    <i data-lucide="zap" class="tech-level-icon"></i>
+                    <span class="tech-level-value">85%</span>
+                  </div>
+                </div>
+                <div class="tech-progress">
+                  <div class="tech-progress-bar" style="width: 85%"></div>
+                </div>
+                <p class="tech-description">API design and implementation</p>
+                <div class="card-corner"></div>
+              </div>
+            </div>
+
+            <!-- Database Technologies (initially hidden) -->
+            <div class="tech-group" data-group="database">
+              <!-- Tech 1 -->
+              <div class="tech-card">
+                <div class="tech-card-gradient"></div>
+                <div class="tech-card-accent"></div>
+                <div class="tech-header">
+                  <h4 class="tech-title">SQL</h4>
+                  <div class="tech-level">
+                    <i data-lucide="zap" class="tech-level-icon"></i>
+                    <span class="tech-level-value">90%</span>
+                  </div>
+                </div>
+                <div class="tech-progress">
+                  <div class="tech-progress-bar" style="width: 90%"></div>
+                </div>
+                <p class="tech-description">Relational database querying and management</p>
+                <div class="card-corner"></div>
+              </div>
+
+              <div class="tech-card">
+                <div class="tech-card-gradient"></div>
+                <div class="tech-card-accent"></div>
+                <div class="tech-header">
+                  <h4 class="tech-title">Firebase</h4>
+                  <div class="tech-level">
+                    <i data-lucide="zap" class="tech-level-icon"></i>
+                    <span class="tech-level-value">85%</span>
+                  </div>
+                </div>
+                <div class="tech-progress">
+                  <div class="tech-progress-bar" style="width: 85%"></div>
+                </div>
+                <p class="tech-description">Real-time database and authentication</p>
+                <div class="card-corner"></div>
+              </div>
+
+              <div class="tech-card">
+                <div class="tech-card-gradient"></div>
+                <div class="tech-card-accent"></div>
+                <div class="tech-header">
+                  <h4 class="tech-title">Git / GitHub</h4>
+                  <div class="tech-level">
+                    <i data-lucide="zap" class="tech-level-icon"></i>
+                    <span class="tech-level-value">85%</span>
+                  </div>
+                </div>
+                <div class="tech-progress">
+                  <div class="tech-progress-bar" style="width: 85%"></div>
+                </div>
+                <p class="tech-description">Version control and collaboration</p>
+                <div class="card-corner"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+      <div class="section-bg"></div>
+      <div class="section-gradient"></div>
+
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-container">
+            <i data-lucide="zap" class="section-icon"></i>
+            <h2 class="section-title">Mission Log</h2>
+          </div>
+          <div class="section-divider"></div>
+          <p class="section-description">
+            My journey as a Full Stack developer, focusing on e-commerce, fitness, and educational platforms.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <!-- Timeline line -->
+          <div class="timeline-line"></div>
+
+          <!-- E-commerce Experience -->
+          <div class="experience-card">
+            <div class="experience-card-gradient"></div>
+            <div class="experience-card-accent"></div>
+
+            <!-- Timeline node -->
+            <div class="timeline-node"></div>
+            <div class="timeline-node-ping"></div>
+
+            <div class="experience-content">
+              <div class="experience-header">
+                <div class="experience-title-container">
+                  <h3 class="experience-title">E-commerce Platform Developer</h3>
+                  <p class="experience-company">Fashion Forward Inc.</p>
+                </div>
+                <div class="experience-period">
+                  <i data-lucide="zap" class="experience-period-icon"></i>
+                  <p class="experience-period-text">2022 - Present</p>
+                </div>
+              </div>
+              <p class="experience-description">
+                Developed a comprehensive e-commerce platform for a clothing brand with advanced product filtering,
+                real-time inventory management, and secure payment processing. Implemented responsive design and optimized
+                performance for mobile devices.
+              </p>
+              <div class="experience-tags">
+                <span class="experience-tag">Next.js</span>
+                <span class="experience-tag">Node.js</span>
+                <span class="experience-tag">MongoDB</span>
+                <span class="experience-tag">Stripe API</span>
+                <span class="experience-tag">Redux</span>
+              </div>
+              <div class="card-corner"></div>
+            </div>
+          </div>
+
+          <!-- Fitness Website Experience -->
+          <div class="experience-card">
+            <div class="experience-card-gradient"></div>
+            <div class="experience-card-accent"></div>
+
+            <!-- Timeline node -->
+            <div class="timeline-node"></div>
+            <div class="timeline-node-ping"></div>
+
+            <div class="experience-content">
+              <div class="experience-header">
+                <div class="experience-title-container">
+                  <h3 class="experience-title">Fitness Application Developer</h3>
+                  <p class="experience-company">FitTech Solutions</p>
+                </div>
+                <div class="experience-period">
+                  <i data-lucide="zap" class="experience-period-icon"></i>
+                  <p class="experience-period-text">2021 - 2022</p>
+                </div>
+              </div>
+              <p class="experience-description">
+                Built a comprehensive fitness tracking platform with workout planning, nutrition tracking, and progress
+                visualization. Implemented interactive charts for data visualization and integrated with wearable device
+                APIs for real-time fitness data.
+              </p>
+              <div class="experience-tags">
+                <span class="experience-tag">React</span>
+                <span class="experience-tag">Express</span>
+                <span class="experience-tag">PostgreSQL</span>
+                <span class="experience-tag">D3.js</span>
+                <span class="experience-tag">REST APIs</span>
+              </div>
+              <div class="card-corner"></div>
+            </div>
+          </div>
+
+          <!-- Scholarship Portal Experience -->
+          <div class="experience-card">
+            <div class="experience-card-gradient"></div>
+            <div class="experience-card-accent"></div>
+
+            <!-- Timeline node -->
+            <div class="timeline-node"></div>
+            <div class="timeline-node-ping"></div>
+
+            <div class="experience-content">
+              <div class="experience-header">
+                <div class="experience-title-container">
+                  <h3 class="experience-title">Educational Portal Developer</h3>
+                  <p class="experience-company">EduTech Innovations</p>
+                </div>
+                <div class="experience-period">
+                  <i data-lucide="zap" class="experience-period-icon"></i>
+                  <p class="experience-period-text">2020 - 2021</p>
+                </div>
+              </div>
+              <p class="experience-description">
+                Designed and implemented a scholarship registration portal with secure document uploads, application
+                tracking, and administrative review workflows. Created a dashboard for applicants to monitor their
+                application status and for administrators to manage the review process.
+              </p>
+              <div class="experience-tags">
+                <span class="experience-tag">Vue.js</span>
+                <span class="experience-tag">Firebase</span>
+                <span class="experience-tag">Cloud Functions</span>
+                <span class="experience-tag">Authentication</span>
+                <span class="experience-tag">PDF Generation</span>
+              </div>
+              <div class="card-corner"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="section-bg"></div>
+      <div class="section-gradient"></div>
+
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-container">
+            <i data-lucide="terminal" class="section-icon"></i>
+            <h2 class="section-title">Initialize Connection</h2>
+          </div>
+          <div class="section-divider"></div>
+          <p class="section-description">
+            Interested in collaborating? Let's connect and create something extraordinary together.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-card">
+            <div class="card-gradient"></div>
+            <div class="card-accent"></div>
+
+            <h3 class="contact-card-title">Contact Information</h3>
+            <div class="contact-info-list">
+              <div class="contact-info-item">
+                <div class="contact-info-icon-container">
+                  <i data-lucide="mail" class="contact-info-icon"></i>
+                </div>
+                <p class="contact-info-text">ash@bradecina.dev</p>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon-container">
+                  <i data-lucide="github" class="contact-info-icon"></i>
+                </div>
+                <p class="contact-info-text">github.com/ashbradecina</p>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon-container">
+                  <i data-lucide="linkedin" class="contact-info-icon"></i>
+                </div>
+                <p class="contact-info-text">linkedin.com/in/ashbradecina</p>
+              </div>
+            </div>
+            <div class="contact-buttons">
+              <button class="btn btn-primary">
+                <i data-lucide="mail" class="btn-icon-left"></i>
+                <span class="btn-text">Email Me</span>
+                <span class="btn-bg"></span>
+              </button>
+              <button class="btn btn-outline">
+                <i data-lucide="external-link" class="btn-icon-left"></i>
+                <span class="btn-text">Resume</span>
+                <span class="btn-bg"></span>
+              </button>
+            </div>
+            <div class="card-corner"></div>
+          </div>
+
+          <div class="contact-form-card">
+            <div class="card-gradient"></div>
+            <div class="card-accent"></div>
+
+            <h3 class="contact-card-title">Send a Message</h3>
+            <form class="contact-form">
+              <div class="form-group">
+                <label for="name" class="form-label">NAME</label>
+                <input type="text" id="name" class="form-input">
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">EMAIL</label>
+                <input type="email" id="email" class="form-input">
+              </div>
+              <div class="form-group">
+                <label for="message" class="form-label">MESSAGE</label>
+                <textarea id="message" rows="4" class="form-textarea"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">
+                <span class="btn-text">Transmit Message</span>
+                <span class="btn-bg"></span>
+              </button>
+            </form>
+            <div class="card-corner"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <i data-lucide="gamepad" class="footer-logo-icon"></i>
+            <span class="footer-logo-text">ASH BRADECINA</span>
+          </div>
+          <p class="footer-copyright">© <span id="current-year"></span> | SYSTEM ONLINE</p>
+          <div class="footer-social">
+            <a href="#" class="footer-social-link">
+              <i data-lucide="github" class="footer-social-icon"></i>
+            </a>
+            <a href="#" class="footer-social-link">
+              <i data-lucide="linkedin" class="footer-social-icon"></i>
+            </a>
+            <a href="#" class="footer-social-link">
+              <i data-lucide="mail" class="footer-social-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="/aliparo/aliparo.js"></script>
+</body>
+</html>

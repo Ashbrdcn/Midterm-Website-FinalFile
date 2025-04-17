@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ryan A. Yasoña - Backend Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="/yasona/style.css"/>
+  <style>
+    /* Mobile Menu */
+    @media (max-width: 768px) {
+      .nav {
+        display: none; 
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .nav.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-link {
+        margin: 10px 0;
+        text-align: center;
+      }
+    }
+
+    .menu-toggle {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="header">
+    <div class="container">
+      <a href="#home" class="logo">
+        <span class="logo-text">RY</span><span class="logo-dot">.</span>
+      </a>
+      <nav class="nav">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#" class="btn btn-primary btn-sm">Resume</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="badge">Backend Developer</div>
+          <h1 class="hero-title">Hi, I'm <span class="gradient-text">Ryan A. Yasoña</span></h1>
+          <p class="hero-description">
+            I build robust, scalable, and secure backend systems using modern tech stacks like Python Flask and databases. I'm also learning how to work with APIs.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Work <i class="fas fa-chevron-right btn-icon"></i></a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/your-github" class="social-link" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/ryan-yasona" class="social-link" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:yasona.ryan11@gmail.com" class="social-link" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="image-glow"></div>
+          <div class="image-container">
+            <img src="/yasona/me.png" alt="Ryan A. Yasoña">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">About Me</div>
+        <h2 class="section-title">Get to know me</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-image">
+          <div class="image-glow"></div>
+          <div class="image-container">
+            <img src="/yasona/me.png" alt="Ryan A. Yasoña">
+          </div>
+        </div>
+        <div class="about-content">
+          <h3 class="about-subtitle">Hello, I'm Ryan A. Yasoña</h3>
+          <p class="about-description">
+            I'm a backend-focused web developer currently studying BSIT at Laguna State Polytechnic University(LSPU). I specialize in building robust, secure, and scalable systems using technologies like Python Flask and databases.
+            <br><br>
+            I'm also exploring the world of <strong>UI/UX design</strong> and <strong>Photoshop</strong> to enhance my creative skills, and I'm currently learning how to build and consume <strong>RESTful APIs</strong> to integrate data and services efficiently.
+          </p>
+
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fas fa-book"></i></div>
+              <div class="skill-content">
+                <h4 class="skill-title">Learning APIs</h4>
+                <p class="skill-description">Currently studying RESTful APIs</p>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
+              <div class="skill-content">
+                <h4 class="skill-title">Photoshop</h4>
+                <p class="skill-description">Learning digital design & photo editing</p>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fas fa-pencil-ruler"></i></div>
+              <div class="skill-content">
+                <h4 class="skill-title">UI/UX Design</h4>
+                <p class="skill-description">Understanding layout, usability & flow</p>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fas fa-database"></i></div>
+              <div class="skill-content">
+                <h4 class="skill-title">Database Management</h4>
+                <p class="skill-description">SQLite, PostgreSQL</p>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fas fa-tools"></i></div>
+              <div class="skill-content">
+                <h4 class="skill-title">Web Frameworks</h4>
+                <p class="skill-description">Flask, Bootstrap</p>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
+              <div class="skill-content">
+                <h4 class="skill-title">Version Control</h4>
+                <p class="skill-description">Git, GitHub</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#" class="btn btn-primary">Download CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">My Work</div>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="/yasona/studyhive.jpg" alt="StudyHive Project">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">StudyHive</h3>
+            <p class="project-description">Collaborative learning platform with modular design and client-side logic.</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="project-link"><i class="fas fa-desktop"></i> Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="/yasona/ecomms.jpg" alt="Ecommerce Site">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Ecommerce Website</h3>
+            <p class="project-description">Full-stack ecommerce platform built with Python Flask and SQLite, featuring session management, secure login, and cart functionality.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Flask</span>
+              <span class="tag">Bootstrap</span>
+              <span class="tag">SQL</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="project-link"><i class="fas fa-desktop"></i> Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects-more">
+        <a href="#" class="btn btn-outline">View All Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Get In Touch</div>
+        <h2 class="section-title">Let's Work Together</h2>
+        <div class="section-divider"></div>
+        <p class="section-description">
+          Whether you're starting a backend project or just want to chat about systems development, feel free to reach out!
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-details">
+              <h3 class="contact-title">Email</h3>
+              <p class="contact-value">yasona.ryan11@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div class="contact-details">
+              <h3 class="contact-title">LinkedIn</h3>
+              <p class="contact-value">linkedin.com/in/ryan-yasona</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div class="contact-details">
+              <h3 class="contact-title">GitHub</h3>
+              <p class="contact-value">github.com/your-github</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-container">
+          <form class="contact-form">
+            <div class="form-group"><input type="text" placeholder="Your Name" class="form-input" required></div>
+            <div class="form-group"><input type="email" placeholder="Your Email" class="form-input" required></div>
+            <div class="form-group"><textarea placeholder="Your Message" class="form-textarea" required></textarea></div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; <span id="current-year">2025</span> Ryan A. Yasoña. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="https://github.com/ryyryy11" class="social-link" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/yaso%C3%B1a-ryan-a-371998345/" class="social-link" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="yasona.ryan11@gmail.com" class="social-link" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+        <div class="footer-nav">
+          <a href="#privacy-policy" class="footer-link">Privacy Policy</a>
+          <a href="#terms-of-service" class="footer-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+      document.querySelector('.nav').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
